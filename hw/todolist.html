@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <main>
+        <div>
+            <input type="text">
+            <button onclick="todo()">click</button>
+        </div>
+        <ul></ul>
+    </main>
+    <script>
+      function todo(){
+        let li=document.createElement("li");
+        let input=document.querySelector("input");
+        li.innerHTML=`${input.value}      <button onclick="removeto(this)"> delete </button>`;
+        let ul=document.querySelector("ul");
+        if(input.value==""){
+            alert("are sahib kuch t")
+        }
+        else{
+            
+        console.log(li);
+        ul.append(li)
+        }
+      }
+      let button=document.querySelector("button");
+      button.innerHTML("go and click");
+      function removeto(element){
+    element.parentElement.remove();
+      }
+    </script>
+</body>
+</html>

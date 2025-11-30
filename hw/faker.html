@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: rgb(255, 255, 255);
+        }
+        main{
+            display: flex;
+            flex-wrap: wrap;
+            grid-template-rows: 1fr,1fr,1fr;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+        }
+        section{
+            margin-top: 20px;
+            height: 650px;
+            width: 450px;
+            overflow: scroll;
+            border: 2px solid rgb(0, 0, 0);
+            background-color: rgb(242, 242, 242);
+            font-family: sans-serif;
+            border-radius: 20px;
+        }
+        section:hover{
+            scale: 1.06;
+        }
+        h1{
+            padding-left: 15px;
+            margin-top: 40px;
+            text-align: center;
+            font-size: 80px;
+            font-weight:600;
+            font-family: sans-serif;
+            background-color: rgb(149, 0, 255);
+        }
+        img{
+            height: 20rem;
+            width: 20rem;
+        }
+        p{
+            padding-left: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Todays Big Basket</h1>
+    <main>
+    </main>
+    <script src="fake.js"></script>
+</body>
+</html>
