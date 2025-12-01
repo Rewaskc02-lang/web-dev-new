@@ -6,9 +6,6 @@ fetch('https://fakestoreapi.com/products')
     return response.json()
 })
 .then((data)=> {
-    // console.log(data);
-    //rendering objects DOM
-    // productarr=data;
     display(data);
     
 })
